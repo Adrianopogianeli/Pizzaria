@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String nomeUsusario;
 
-    Pedido pedido = new(pedido);
+//    Pedido pedido = new(pedido);
 
 
     @Override
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             nomeUsusario = getIntent().getStringExtra("USUARIO");
         }
 
-
+/*
 
         cbBacon.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -80,8 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
             return ((RadioButton)findViewById(R.id.rbBroto)).getText().toString();
 
-
+*/
     }
-
 
 }

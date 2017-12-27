@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -15,11 +15,11 @@
         android:gravity="right"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="USUARIO"
+        tools:text="USUARIO XPTO"
         android:id="@+id/tvCliente"/>
 
     <TextView
-
+        android:gravity="left"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Escolha a(s) pizza(s)"
@@ -28,7 +28,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,14 +55,16 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/rgTamanho">
+        android:orientation="horizontal"
+        android:id="@+id/rgTamanho"
+        android:gravity="center">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Broto"
-            android:id="@+id/rbBroto"/>
+            android:id="@+id/rbBroto"
+            android:gravity="left"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spPagamentos"
-        android:entries="@array/pagamentos"></Spinner>
+        android:entries="@array/opcoes_pagamentos"></Spinner>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -93,4 +96,4 @@
         android:text="Fechar pedido"/>
 
 
-</LinearLayout>
+</RelativeLayout>

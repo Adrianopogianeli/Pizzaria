@@ -78,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
     @OnClick(R.id.btConectar)
     public void connectar(){
         if (validaUsuario() && validaSenha()){
-            Intent i = new Intent(this, MainActivity.class);
+            Intent i = new Intent(this, PedidoActivity.class);
             i.putExtra("USUARIO",username.getEditText().getText().toString());
             startActivity(i);
         }
