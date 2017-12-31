@@ -52,7 +52,7 @@ public class PedidoActivity extends AppCompatActivity {
         cbSobremesa = (CheckBox) findViewById(R.id.cbSobremesa);
 //Recuperar o valor informado pela tela de Login
         Bundle bundle = getIntent().getExtras();
-        String usuario = bundle.getString( "usuario");
+        String usuario = bundle.getString("username");
 //Alterar o texto de boas vindas
         tvUsuario.setText( "Olá " + usuario);
     }

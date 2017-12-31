@@ -36,12 +36,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <CheckBox
+                    android:id="@+id/cbAtum"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:checked="false"
                     android:text="@string/txt_pizza_atum"/>
                 <CheckBox
+                    android:id="@+id/cbBacon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -88,11 +90,13 @@
                     android:checked="false"
                     android:text="@string/txt_pizza_pequena"/>
                 <RadioButton
+                    android:id="@+id/rbMedia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="@string/txt_pizza_media"/>
                 <RadioButton
+                    android:id="@+id/rbGrande"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
@@ -107,7 +111,7 @@
             style="@style/Fiap.Header"
             />
         <Spinner
-            android:id="@+id/spn_pagamentos"
+            android:id="@+id/spPagamentos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
