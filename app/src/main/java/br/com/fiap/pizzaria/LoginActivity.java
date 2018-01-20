@@ -78,9 +78,13 @@ public class LoginActivity extends AppCompatActivity {
     @OnClick(R.id.btConectar)
     public void connectar(){
         if (validaUsuario() && validaSenha()){
-            Intent i = new Intent(this, PedidoActivity.class);
-            i.putExtra("USUARIO",username.getEditText().getText().toString());
-            startActivity(i);
+            String login = username.getEditText().getText().toString();
+            String senha = password.getEditText().getText().toString();
+            // passando variavel para classe PedidoActivity
+            Intent intent = new Intent( this , PedidoActivity. class ) ;
+            intent.putExtra("USUARIO",login);
+            startActivity(intent);
+
         }
 
     }
